@@ -110,7 +110,7 @@ function App() {
   };
 
   return (
-    <div class="box">
+    <div className="box">
       <h1>Standard반 배열 API 테스트</h1>
       <input placeholder="Enter text"
         value={query}
@@ -118,7 +118,7 @@ function App() {
           setQuery(e.target.value);
         }}
       />
-      <div class="button">
+      <div className="button">
         <button onClick={hanldeForEach}>forEach</button>
         <button onClick={handleFilter}>filter</button>
         <button onClick={handleMap}>map</button>
@@ -135,11 +135,11 @@ function App() {
         <button onClick={handleSort}>sort</button>
         <button onClick={handleJoin}>join</button>
       </div>
-      <div class="original">
+      <div className="original">
         <h4>원본배열 :</h4>
         <p>{array.join(",")}</p>
       </div>
-      <div class="result">
+      <div className="result">
       <h4>결과물 :</h4>
       <p>{result}</p>
       </div>
